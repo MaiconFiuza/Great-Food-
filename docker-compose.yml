@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   app:
-    image: openjdk:21-jdk
+    image: openjdk:21-jdk-slim-buster
     container_name: spring-boot-app
     volumes:
       - ./app:/usr/src/app
@@ -15,12 +13,3 @@ services:
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     ports:
       - "8080:8080"
-
-  h2-db:
-    image: oscarfonts/h2
-    container_name: h2-database
-    ports:
-      - "1521:1521" # Porta para conexões TCP do H2
-      - "8082:8082" # Porta para o console web do H2 //ver se apagar esse cara dá bom
-    environment:
-      H2_OPTIONS: "-tcp -tcpAllowOthers -web -webAllowOthers"
