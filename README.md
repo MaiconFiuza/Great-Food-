@@ -17,14 +17,14 @@ Nessa primeira faze de entrega o objetivo é desenvolver um backend robusto util
 ### 1. Fazer o build dos containeres da aplicação:
 Executar o seguinte comando:
     
-    docker compose build --no-cache
+    docker-compose up --build
 
 O comando acima gerará os conteineres de aplicação e banco de dados.
 
 ### 2. Executar a aplicação através dos containeres criados:
 Executar o seguinte comando para inicializar os containeres da aplicação, na raíz do projeto (onde se encontra o arquivo docker-compose.yml):
 
-    docker compose up
+    docker-compose up
 
 ### 3. Acessar a aplicação
 A aplicação estará disponível na seguinte URL:
