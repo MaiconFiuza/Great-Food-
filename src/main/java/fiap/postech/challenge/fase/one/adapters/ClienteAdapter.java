@@ -8,7 +8,8 @@ import java.util.Date;
 public class ClienteAdapter {
     public Cliente transform(ClienteCreateRequestDTO clienteCreateRequestDTO, Date ultimaAlteracao) {
 
-        Cliente cliente = new Cliente(clienteCreateRequestDTO.nome(),
+        Cliente cliente = new Cliente(
+        clienteCreateRequestDTO.nome(),
         clienteCreateRequestDTO.email(),
         clienteCreateRequestDTO.login(),
         clienteCreateRequestDTO.senha(),

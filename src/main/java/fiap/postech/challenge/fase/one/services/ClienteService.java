@@ -30,7 +30,11 @@ public class ClienteService {
                 .orElseThrow(() -> new ResourceNotFoundException("Cliente não encontrado"));
 
         return new ClienteResponseDTO(
-                cliente.getNome(), cliente.getEmail(), cliente.getEndereco(), cliente.getUltimaAlteracao()
+                cliente.getId(),
+                cliente.getNome(),
+                cliente.getEmail(),
+                cliente.getEndereco(),
+                cliente.getUltimaAlteracao()
         );
     }
 
