@@ -31,4 +31,4 @@ A aplicação estará disponível na seguinte URL:
 
     http://localhost:8080/
 
-As collection do postman se econtram no seguinte link: [Collection Postman GREAT FOOD](https://github.com/MaiconFiuza/Great-Food-/blob/main/Projeto%20M%C3%B3dulo%201.postman_collection.json)
+As collections do postman se encontram no seguinte link: [Collection Postman GREAT FOOD](https://github.com/MaiconFiuza/Great-Food-/blob/main/Projeto%20M%C3%B3dulo%201.postman_collection.json)
