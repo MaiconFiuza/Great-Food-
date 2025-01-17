@@ -33,7 +33,27 @@
 					"name": "POST create Usuário",
 					"request": {
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Testinho\",\r\n    \"email\": \"fifiuza@teste.com.br\",\r\n    \"login\": \"fifiuza\",\r\n    \"senha\": \"123#@Teste\",\r\n    \"endereco\": \"minha casita\"\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
 					},
 					"response": []
 				},
@@ -73,7 +93,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"senhaAtual\": \"cliente123456\",\r\n    \"novaSenha\": \"123456\"\r\n\r\n}",
+							"raw": "{\r\n    \"senhaAtual\": \"123#@Teste\",\r\n    \"novaSenha\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -81,7 +101,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/clientes/1/senhas",
+							"raw": "http://localhost:8080/clientes/2/senhas",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -89,7 +109,7 @@
 							"port": "8080",
 							"path": [
 								"clientes",
-								"1",
+								"2",
 								"senhas"
 							]
 						}
@@ -103,7 +123,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"cliente@teste.com\",\r\n    \"senha\": \"cliente123456\"\r\n}",
+							"raw": "{\r\n    \"email\": \"fifiuza@teste.com.br\",\r\n    \"senha\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -133,7 +153,19 @@
 					"name": "GET Dono by id",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/donos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"donos",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -144,7 +176,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"nome\": \"Testinho\",\r\n    \"email\": \"fifiuza@teste.com.br\",\r\n    \"login\": \"fifiuza\",\r\n    \"senha\": \"123#@Teste\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -172,7 +204,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Maicon Fiuza\",\r\n    \"email\": \"fifiuza@teste.com.br\",\r\n    \"login\": \"fifiuza\",\r\n    \"endereco\": \"casa comprada\"\r\n}",
+							"raw": "{\r\n    \"nome\": \"Maicon Fiuza\",\r\n    \"email\": \"fifiuza@teste.com.br\",\r\n    \"login\": \"fifiuza\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -201,7 +233,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"senhaAtual\": \"cliente123456\",\r\n    \"novaSenha\": \"123456\"\r\n\r\n}",
+							"raw": "{\r\n    \"senhaAtual\": \"123#@Teste\",\r\n    \"novaSenha\": \"123456\"\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -209,15 +241,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/clientes/1/senhas",
+							"raw": "http://localhost:8080/donos/2/senhas",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clientes",
-								"1",
+								"donos",
+								"2",
 								"senhas"
 							]
 						}
@@ -231,7 +263,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"cliente@teste.com\",\r\n    \"senha\": \"cliente123456\"\r\n}",
+							"raw": "{\r\n    \"email\": \"fifiuza@teste.com.br\",\r\n    \"senha\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -239,14 +271,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/clientes",
+							"raw": "http://localhost:8080/donos",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"clientes"
+								"donos"
 							]
 						}
 					},
